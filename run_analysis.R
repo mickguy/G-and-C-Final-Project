@@ -86,9 +86,9 @@ wearableTechnologyData$activity <- mapvalues(wearableTechnologyData$activity, fr
 # wearableTechnologyData is clean and is ready for analysis
 # Output the clean data frame to a text file
 
-write.table(wearableTechnologyData, file="WearableTechnologyData.txt", row.names=FALSE)
+write.table(wearableTechnologyData, file="tidy_data.txt", row.names=FALSE)
 
-print("Data Cleaning complete - See WearableTechnologyData.txt in working directory.")
+print("Data Cleaning complete - See tidy_data.txt in working directory.")
 
 
 
