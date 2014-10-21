@@ -4,19 +4,21 @@ author: "Michael Guy"
 date: "October 13, 2014"
 output: html_document
 ---
+# Clean and Tidy Dataset
+## Human Activity Recognition Using Smartphones
 
 run_analysis.R uses the dataset from Human Activity Recognition Using Smartphones to create a new cleaner dataset of the training and test data. The raw dataset is in the folder "UCI HAR Dataset". It is licensed to Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
 In order to provide a clean dataset the following steps have been performed on the raw data files:
 
-Step 1
+Step 1   
         Load the library plyr which will be used at the end of the script to map the activity id to the activity
-        label
-Steps 2 and 3
+        label.   
+Steps 2 and 3   
         Load the training and test data values from train/X_train.txt and test/X_test.txt
-Step 4
-        creates a new data frame loaded with the training data values and and the test 
-        data values appended in sequential order.
+Step 4   
+        Create a new data frame loaded with the training data values and and the test 
+        data values appended in sequential order.   
 Step 5
         load features.txt - each row in features.txt corresponds to the column heading of the data values, ex 
         the value in row 24 of features.txt corresponds to the column name (heading) of row 24 in the data
